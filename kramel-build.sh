@@ -51,7 +51,7 @@ ZIPNAME="NetErnels"
 
 # Build Author
 # Take care, it should be a universal and most probably, case-sensitive
-AUTHOR="cyberknight777"
+AUTHOR="MrRob0-X"
 
 # Architecture
 ARCH=arm64
@@ -187,7 +187,7 @@ DATE=$(TZ=GMT-8 date +"%Y%m%d-%H%M")
 	fi
 
 	msg "|| Cloning Anykernel ||"
-	git clone --depth 1 --no-single-branch https://github.com/NetErnels/AnyKernel3.git -b mojito
+	git clone --depth 1 --no-single-branch https://github.com/NetErnels/AnyKernel3.git -b apollo
 	msg "|| Cloning libufdt ||"
 	git clone https://android.googlesource.com/platform/system/libufdt "$KERNEL_DIR"/scripts/ufdt/libufdt
 	if [ $MODULES = "1" ]
